@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "714226449559",
+    "project_id": "appdevnursie",
+    "storage_bucket": "appdevnursie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714226449559:android:07cedda5ecd7bef3b3bdd2",
+        "android_client_info": {
+          "package_name": "com.example.appdevnursie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714226449559-srtoe1tk50n9m9o1efu10cenfh8m9410.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appdevnursie",
+            "certificate_hash": "22b5b951f4adc03837b7af21702de2d921005660"
+          }
+        },
+        {
+          "client_id": "714226449559-2mbv6b63ucajuuld6uurqgaqrup8snla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP9dF2F4rJFKvia6BWCdrqrIqlX3l1_pM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714226449559-2mbv6b63ucajuuld6uurqgaqrup8snla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

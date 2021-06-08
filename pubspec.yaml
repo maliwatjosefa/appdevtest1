@@ -1,0 +1,139 @@
+name: appdevnursie
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  #sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  provider: ^5.0.0
+  firebase_core: ^0.7.0
+  firebase_auth: ^0.20.0+1
+  cloud_firestore: ^0.16.0
+  flutter_secure_storage: ^4.2.0
+  otp_text_field: ^1.1.1
+  #firebase_database: ^7.0.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_icons: ^1.1.0
+  percent_indicator: ^2.1.9
+  firebase: ^8.0.0
+  carousel_slider: ^2.0.0
+  google_sign_in: ^4.5.4
+  flutter_svg: ^0.19.2+1
+  flutter_signin_button: ^1.1.0
+  flutter_facebook_login: ^3.0.0
+  #flutter_facebook_auth: ^0.2.3
+  animated_floatactionbuttons: ^0.1.0
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/facebook.png
+    - assets/images/google.png
+    - assets/images/LOGO.png
+    - assets/images/sign_wp.png
+    - assets/images/signup_wp.png
+    - assets/images/dashboard_LOGO.png
+    - assets/images/remedy.png
+    - assets/images/reports.png
+    - assets/images/reminder.png
+    - assets/images/reminder_LOGO.png
+    - assets/images/add_wp.png
+    - assets/images/newmed_LOGO.png
+    - assets/images/nursieF.png
+    - assets/images/user.png
+    - assets/images/diary.png
+    - assets/images/dashboard_wp.png
+    - assets/images/settings.svg
+    - assets/images/user.svg
+    - assets/images/camera.svg
+    - assets/images/profilepic.jpg
+    - assets/images/alarm_wp.png
+    - assets/images/jcard.png
+    - assets/images/medcard.png
+    - assets/images/homecard.png
+    - assets/images/usercard.png
+    - assets/images/reportcard.png
+    - assets/images/profileHeader.png
+    - assets/images/fever.png
+    - assets/images/colds.png
+    - assets/images/cough.png
+    - assets/images/headache.png
+    - assets/images/journalHeader.png
+    - assets/images/stomach.png
+    - assets/images/taste.png
+    - assets/images/feverHeader.png
+    - assets/images/1cluster.png
+    - assets/images/1forehead.png
+    - assets/images/1neck.png
+    - assets/images/1sinus.png
+    - assets/images/1side.png
+    - assets/images/1temples.png
+    - assets/images/2light.png
+    - assets/images/2nausea.png
+    - assets/images/2pulsing.png
+    - assets/images/2sound.png
+    - assets/images/2vomit.png
+    - assets/images/headacheHeader.png
+    - assets/images/painscale.png
+    - assets/images/bottom.png
+    - assets/images/bottomDesign.png
+    - assets/images/lower.png
+    - assets/images/pageInfo.png
+    - assets/images/tape.png
+    - assets/images/tape2.png
+    - assets/images/upperPart.png
+    - assets/images/reportsHeader.png
+    - assets/images/remediesHeader.png
+    - assets/images/forgotpw.png
+    - assets/images/bag_1.png
+    - assets/images/back.svg
+    - assets/images/fever2.png
+    - assets/images/firstaid.png
+    - assets/images/fever_prevent.png
+    - assets/images/fever3.png
+    - assets/images/fever4.png
+    - assets/images/stomachache2.png
+    - assets/images/stomachache.png
+    - assets/images/stomachache3.png
+    - assets/images/stomachache4.png
+    - assets/images/cough2.png
+    - assets/images/cough3.png
+    - assets/images/cough4.png
+    - assets/images/colds2.png
+    - assets/images/colds3.png
+    - assets/images/taste2.png
+    - assets/images/taste3.png
+    - assets/images/taste4.png
+    - assets/images/sneeze.png
+    - assets/images/stomach4.png
+    - assets/images/stom.png
+    - assets/images/headache2.png
+    - assets/images/headache3.png
+    - assets/images/headache4.png
+    - assets/images/vomit.png
+    - assets/images/stomach2.png
+    - assets/images/nausea.png
+    - assets/images/diarrhea.png
+    - assets/images/cramps.png
+    - assets/images/bloating.png
+    - assets/images/appetite.png
+    - assets/images/itchy-throat.png
+    - assets/images/dry-cough.png
+    - assets/images/coughHeader.png
+    - assets/images/-phlegm.png
+    - assets/images/runny.png
+    - assets/images/coldsHeader.png
+    - assets/images/clogged.png
