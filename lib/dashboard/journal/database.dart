@@ -1,9 +1,10 @@
 import 'package:appdevnursie/dashboard/journal/post.dart';
+import 'package:firebase/firebase.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 final databaseReference = FirebaseDatabase.instance.reference();
 
-DatabaseReference savePost(Post post) {
+DatabaseReference savePost(Post post){
   var id = databaseReference.child('Symptoms/').push();
   id.set(post.toJson());
   return id;
@@ -21,3 +22,4 @@ Future<List<Post>> getAllPosts() async {
   }
   return posts;
 }
+

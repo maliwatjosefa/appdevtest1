@@ -1,28 +1,30 @@
-import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase/firebase.dart';
 //import 'package:flutter/src/material/data_table.dart';
 
 class Post {
   String category;
   String input;
   String dateTime;
-  DatabaseReference? ID;
+  DatabaseReference? _id;
 
   Post(this.category, this.input, this.dateTime);
 
-  void setId(DatabaseReference id) {
-    this.ID = id;
+  void setId(DatabaseReference id){
+    this._id = id;
   }
 
-  Map<String, dynamic> toJson() {
-    return {
+  Map<String, dynamic> toJson(){
+    return{
       'category': this.category,
       'input': this.input,
       'dateTime': this.dateTime,
     };
   }
+
+  
 }
 
-Post createPost(record) {
+Post createPost(record){
   Map<String, dynamic> attributes = {
     'category': '',
     'input': '',
@@ -37,5 +39,5 @@ Post createPost(record) {
     attributes['dateTime'],
   );
 
-  return post;
+  return post;  
 }

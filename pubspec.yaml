@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.2
   provider: ^5.0.0
+  #firebase: ^9.0.1 
   firebase_core: ^0.7.0
   firebase_auth: ^0.20.0+1
   cloud_firestore: ^0.16.0
@@ -21,13 +21,12 @@ dependencies:
   otp_text_field: ^1.1.1
   #firebase_database: ^7.0.0
   
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_icons: ^1.1.0
   percent_indicator: ^2.1.9
-  firebase: ^8.0.0
+  #firebase: ^8.0.0
   carousel_slider: ^2.0.0
   google_sign_in: ^4.5.4
   flutter_svg: ^0.19.2+1

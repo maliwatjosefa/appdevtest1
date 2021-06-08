@@ -1,4 +1,3 @@
-
 // import 'dart:convert';
 // //import 'package:appdevnursie/google.dart';
 // import 'package:appdevnursie/register.dart';
@@ -48,7 +47,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
-    
+
 //     final loginProvider = Provider.of<AuthService>(context);
 //     return Scaffold(
 //         resizeToAvoidBottomInset: false,
@@ -202,7 +201,7 @@
 //                                                 });
 //                                                 print('''
 //                                                         Logged in!
-                                                        
+
 //                                                         Token: ${accessToken.token}
 //                                                         User id: ${accessToken.userId}
 //                                                         Expires: ${accessToken.expires}
@@ -313,13 +312,12 @@
 //   }
 // }
 
-
 import 'dart:convert';
 //import 'package:appdevnursie/screens/dashboard.dart';
 import 'package:appdevnursie/services2.dart/homepage.dart';
 import 'package:appdevnursie/screens/register.dart';
 import 'package:appdevnursie/screens/dashboard.dart';
-import 'package:http/http.dart' as http;
+//import 'package:http/http.dart' as http;
 import 'package:appdevnursie/screens/forgotpw.dart';
 import 'package:appdevnursie/services2.dart/services.dart';
 import 'package:appdevnursie/services2.dart/homepage.dart';
@@ -448,9 +446,7 @@ class _LoginState extends State<Login> {
                                   await loginProvider.login(
                                       _emailController.text.trim(),
                                       _passwordController.text.trim());
-                                  
                                 }
-                                
                               },
                               height: 50,
                               minWidth: loginProvider.isLoading
@@ -492,53 +488,12 @@ class _LoginState extends State<Login> {
                                       children: <Widget>[
                                         SignInButton(
                                           Buttons.Facebook,
-                                          onPressed: () async {
-                                            final FacebookLoginResult result =
-                                                await facebookSignIn
-                                                    .logIn(['email']);
-
-                                            switch (result.status) {
-                                              case FacebookLoginStatus.loggedIn:
-                                                final FacebookAccessToken
-                                                    accessToken =
-                                                    result.accessToken;
-                                                final graphResponse =
-                                                    await http.get(
-                                                        'https://graph.facebook.com/v2.12/me?fields=first_name,picture&access_token=${accessToken.token}');
-                                                final profile = jsonDecode(
-                                                    graphResponse.body);
-                                                print(profile);
-                                                setState(() {
-                                                  name = profile['first_name'];
-                                                  image = profile['picture']
-                                                      ['data']['url'];
-                                                });
-                                                print('''
-                                                        Logged in!
-                                                        
-                                                        Token: ${accessToken.token}
-                                                        User id: ${accessToken.userId}
-                                                        Expires: ${accessToken.expires}
-                                                        Permissions: ${accessToken.permissions}
-                                                        Declined permissions: ${accessToken.declinedPermissions}
-                                                        ''');
-                                                break;
-                                              case FacebookLoginStatus
-                                                  .cancelledByUser:
-                                                print(
-                                                    'Login cancelled by the user.');
-                                                break;
-                                              case FacebookLoginStatus.error:
-                                                print(
-                                                    'Something went wrong with the login process.\n'
-                                                    'Here\'s the error Facebook gave us: ${result.errorMessage}');
-                                                break;
-                                            }
-                                            // Navigator.push(
-                                            //     context,
-                                            //     MaterialPageRoute(
-                                            //         builder: (ctx) =>
-                                            //             Dashboard()));
+                                          onPressed: () {
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        ForgotPassword()));
                                           },
                                         ),
                                       ],
@@ -578,11 +533,10 @@ class _LoginState extends State<Login> {
                                 ),
                                 TextButton(
                                   onPressed: () {
-                                  Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (ctx) =>
-                                                      Register()));
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (ctx) => Register()));
                                   },
                                   //=> widget.toggleScreen(),
                                   child: Text(
